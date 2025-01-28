@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <Title>Coffee Order Form</Title>
+</head>
+
+<body>
+    <h1>Welcome to our Coffee Shop!</h1>
+
+    <p>Please enter the following information so we can get you your perfect cup of coffee!</p>
+
+<table>
+    <form action="?action_page.php">
+
+        <label for="fname">Customer Name:<br></label>
+        <input type="text" id="fname" name="_fname"><br><br>
+
+        <label for="email">Email:<br></label>
+        <input type="email" id="email" name="email"><br><br>
+
+    </form>
+
+   <label for="coffee">Choose a coffee type:<br></label>
+   <select id="coffee" name="coffee">
+
+        <option value="latte">latte</option>
+
+        <option value="cappuccino">cappuccino</option>
+
+        <option value="americano">americano</option>
+
+        <option value="espresso">espresso</option>
+
+        <option value="mocha">mocha</option>
+
+        <option value="frappe">frappe</option>
+
+        <option value="iced">iced</option>
+
+        <option value="black">black</option>
+
+   </select>
+
+      <form action="/action_page.php">
+
+        <p>Please select size:</p>
+
+        <input type="radio" id="small" name="size" value="Small">
+        <label for="small">Small</label><br>
+
+        <input type="radio" id="medium" name="size" value="Medium">
+        <label for="medium">Medium</label><br>
+
+        <input type="radio" id="large" name="size" value="Large">
+        <label for="large">Large</label><br>
+
+      </form>
+
+      <form action="/action_page.php">
+
+        <p>Extras:</p>
+
+        <input type="checkbox" id="toppings1" name="toppings1" value="whipped cream">
+        <label for="toppings1">Whipped Cream</label><br>
+
+        <input type="checkbox" id="toppings2" name="toppings2" value="extra shot">
+        <label for="toppings2">Extra Shot</label><br>
+
+        <input type="checkbox" id="toppings3" name="toppings3" value="almond milk">
+        <label for="toppings3">Almond Milk</label><br>
+
+      </form>
+
+      <form action="https://www.w3schools.com/action_page.php" method="get">
+
+        <p><label for="special instructions">Special Instructions:</label></p>
+
+        <textarea id="specical instructions" name="special instructions" rows="4" cols="50"></textarea><br>
+
+        <input type="submit" value="Submit">
+
+      </form>
+
+</table>
+</body>
+</html>
